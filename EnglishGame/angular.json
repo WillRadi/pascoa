@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "EnglishGame": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EnglishGame"
+    }
+  },
+  "defaultProject": "EnglishGame",
+  "cli": {
+    "analytics": "3f73b02b-e899-432e-b94d-35a79c7a3c09"
+  }
 }
