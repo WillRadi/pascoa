@@ -6,5 +6,5 @@ import { Component } from '@angular/core'
     styleUrls: ['./top.component.css']
 })
 export class TopComponent {
-
+    public title: string = "Teste seu inglês";
 }
