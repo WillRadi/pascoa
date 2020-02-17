@@ -16,5 +16,14 @@ export class PainelComponent implements OnInit {
 
   public instrucao: string = 'Traduza a frase:'
   public frases: Frase[] = FRASES
+  public resposta: string
+
+  atualizaResposta(texto: Event): void {
+    this.resposta = (<HTMLInputElement>texto.target).value
+  }
+
+  comparaResposta(): void {
+    console.log(`Resposta: ${this.resposta}`)
+  }
 
 }
