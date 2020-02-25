@@ -2,7 +2,9 @@
     <div class="jumbotron">
         <div class="row">
             <div class="col-sm-6">
-                <app-progresso></app-progresso>
+                <!-- progresso é a propriedade de ProgressoComponent -->
+                <!-- progressoPainel é uma propriedade de PainelComponent -->
+                <app-progresso [progresso]="progressoPainel"></app-progresso>
             </div>
             <div class="col-sm-6">
                 <div class="d-flex justify-content-end">
