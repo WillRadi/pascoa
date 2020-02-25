@@ -14,7 +14,7 @@ export class PainelComponent implements OnInit {
   public resposta: string
   public rodada: number = 0
   public rodadaFrase: Frase
-  public progresso: number = 0
+  public progressoPainel: number = 0
 
   constructor() {
     this.rodadaFrase = this.frases[this.rodada]
@@ -31,8 +31,8 @@ export class PainelComponent implements OnInit {
     if (this.resposta == this.rodadaFrase.frasePtBr) {
       this.rodada++
       this.rodadaFrase = this.frases[this.rodada]
-      this.progresso = this.progresso + (100 / this.frases.length)
-      console.log(this.progresso)
+      this.progressoPainel = this.progressoPainel + (100 / this.frases.length)
+      console.log(this.progressoPainel)
     } else {
       alert('Eroooou')
     }
