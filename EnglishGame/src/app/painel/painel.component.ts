@@ -17,7 +17,7 @@ export class PainelComponent implements OnInit {
   public progressoPainel: number = 0
 
   constructor() {
-    this.rodadaFrase = this.frases[this.rodada]
+    this.atualizaRodada()
   }
 
   ngOnInit(): void {
@@ -30,12 +30,17 @@ export class PainelComponent implements OnInit {
   comparaResposta(): void {
     if (this.resposta == this.rodadaFrase.frasePtBr) {
       this.rodada++
-      this.rodadaFrase = this.frases[this.rodada]
       this.progressoPainel = this.progressoPainel + (100 / this.frases.length)
       console.log(this.progressoPainel)
+      this.atualizaRodada()
     } else {
       alert('Eroooou')
     }
+  }
+
+  atualizaRodada(): void {
+    this.rodadaFrase = this.frases[this.rodada]
+    this.resposta = ''
   }
 
 }
