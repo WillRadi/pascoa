@@ -9,7 +9,7 @@ import { FRASES } from './frases-mock';
 })
 export class PainelComponent implements OnInit {
 
-  public instrucao: string = 'Traduza a frase:'
+  public instrucao: string = 'Insira a senha encontrada:'
   public frases: Frase[] = FRASES
   public resposta: string
   public rodada: number = 0

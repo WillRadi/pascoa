@@ -6,4 +6,20 @@
 
 button {
     background-color: #f35d8d;
+    border-color: #f35d8d;
+}
+
+button:hover {
+    background-color: #f35d8d;
+    border-color: #f35d8d;
+}
+
+button:focus {
+    background-color: #f35d8d;
+    border-color: #f35d8d;
+}
+
+button:not(:disabled):not(.disabled):active {
+    background-color: #f35d8d;
+    border-color: #f35d8d;
 }
