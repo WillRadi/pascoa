@@ -33,6 +33,7 @@ export class PainelComponent implements OnInit {
       this.progressoPainel = this.progressoPainel + (100 / this.frases.length)
       console.log(this.progressoPainel)
       this.atualizaRodada()
+      alert('Boa! Um passo mais próxima do ovo!')
     } else {
       alert('Eroooou')
     }
